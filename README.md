@@ -4,7 +4,7 @@ This HCI (Human-Computer Interaction) application in Python will allow you to co
 
 At this point, you are forced to work with the facial movements I chose but I am working on making them configurable. The list of actions include:
 
- - Closing your eyes **squint** - for controlling the scroll movement
+ - Closing your eyes - for controlling the scroll movement
  - Winking - for controlling clicks
  - Moving your head around (pitch and yaw)
  - Opening your mouth (a little bit, yes)
