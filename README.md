@@ -16,6 +16,7 @@ At this point, you are forced to work with the facial movements I chose but I am
 * PyAutoGUI
 * Dlib
 * Imutils
+* Audio files from https://drive.google.com/open?id=12eH3CTVb4tjSmfg8QE7ByzAve_qJA6gH
 
 ## Execution
 Order of Execution is as follows:
