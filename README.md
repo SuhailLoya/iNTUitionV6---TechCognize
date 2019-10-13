@@ -16,7 +16,7 @@ At this point, you are forced to work with the facial movements I chose but I am
 * PyAutoGUI
 * Dlib
 * Imutils
-* Audio files from https://drive.google.com/open?id=12eH3CTVb4tjSmfg8QE7ByzAve_qJA6gH
+* Audio files - https://drive.google.com/open?id=12eH3CTVb4tjSmfg8QE7ByzAve_qJA6gH
 
 ## Execution
 Order of Execution is as follows:
@@ -33,9 +33,9 @@ I definitely understand that these facial movements could be a little bit weird 
 </div>
 
 ## How It Works
-This project is deeply centered around predicting the facial landmarks of a given face. We can accomplish a lot of things using these landmarks. From detecting eye-blinks [[3](#references)] in a video to predicting emotions of the subject. The applications, outcomes and possibilities of facial landmarks are immense and intriguing.
+This project is deeply centered around predicting the facial landmarks of a given face. We can accomplish a lot of things using these landmarks. From detecting eye-blinks in a video to predicting emotions of the subject. The applications, outcomes and possibilities of facial landmarks are immense and intriguing.
 
-[Dlib](dlib.net/)'s prebuilt model, which is essentially an implementation of [[4](#references)], not only does a fast face-detection but also allows us to accurately predict 68 2D facial landmarks. Very handy.  
+[Dlib](dlib.net/)'s prebuilt model, which is essentially an implementation of, not only does a fast face-detection but also allows us to accurately predict 68 2D facial landmarks. Very handy.  
 
 <div align="center">
 <img src="images/facial-landmarks-68.jpg" width=500 height=190/>
@@ -44,7 +44,7 @@ This project is deeply centered around predicting the facial landmarks of a give
 Using these predicted landmarks of the face, we can build appropriate features that will further allow us to detect certain actions, like using the eye-aspect-ratio (more on this below) to detect a blink or a wink, using the mouth-aspect-ratio to detect a yawn etc or maybe even a pout. In this project, these actions are programmed as triggers to control the mouse cursor. [PyAutoGUI](http://pyautogui.readthedocs.io) library was used to control the mouse cursor. 
 
 ### Eye-Aspect-Ratio (EAR)
-You will see that Eye-Aspect-Ratio [[1](#references)] is the simplest and the most elegant feature that takes good advantage of the facial landmarks. EAR helps us in detecting blinks [[3](#references)] and winks etc.  
+You will see that Eye-Aspect-Ratio is the simplest and the most elegant feature that takes good advantage of the facial landmarks. EAR helps us in detecting blinks and winks etc.  
 <div align="center">
 <img src="images/EAR-final.png" width=772 height=298/>
 </div>
